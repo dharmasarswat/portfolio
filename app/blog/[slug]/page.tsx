@@ -1,6 +1,4 @@
-import { getPostBySlug, getAllPosts } from '../../../lib/posts';
-import { remark } from 'remark';
-import html from 'remark-html';
+import { getAllPosts, getPostBySlug } from '../../../lib/posts';
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
@@ -10,11 +8,10 @@ export async function generateStaticParams() {
 export default async function BlogPost({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { metadata, content: rawContent } = getPostBySlug(params.slug);
-  const processedContent = await remark().use(html).process(rawContent);
-  const content = processedContent.toString();
+  const { slug } = await params;
+  const { metadata, content } = getPostBySlug(slug);
 
   return (
     <div className="max-w-4xl mx-auto p-4">
