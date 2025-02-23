@@ -17,9 +17,11 @@ export default function blog() {
             href={`/blog/${slug}`}
             className="flex flex-col space-y-1 mb-4 bg-accent p-2"
           >
-            <div className="w-full flex flex-col">
-              <p className="tracking-tight">{metadata.title}</p>
-              <p className="tracking-tight">{metadata.excerpt}</p>
+            <div className="w-full flex flex-col gap-4">
+              <h3 className="tracking-tight font-semibold text-xl">
+                {metadata.title}
+              </h3>
+              <p className="tracking-tight text-md">{metadata.excerpt}</p>
               <p className="h-6 text-xs text-muted-foreground">
                 {metadata.date}
               </p>

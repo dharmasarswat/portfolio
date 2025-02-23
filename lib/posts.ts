@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
 
 type Post = {
   slug: string;
@@ -28,10 +30,12 @@ export function getAllPosts(): Post[] {
   });
 }
 
-export function getPostBySlug(slug: string) {
+export async function getPostBySlug(slug: string) {
   const filePath = path.join(contentDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(fileContents);
 
-  return { metadata: data, content } as Post;
+  const processedContent = await remark().use(html).process(content);
+
+  return { metadata: data, content: processedContent.toString() } as Post;
 }
