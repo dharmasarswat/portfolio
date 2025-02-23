@@ -4,10 +4,6 @@ date: "2025-02-18"
 excerpt: "Explore how advanced debugging techniques and a systematic approach to problem-solving have empowered me to overcome challenging coding bugs."
 ---
 
-# Mastering Debugging: A Developer's Journey to Problem Solving
-
-*Posted on February 18, 2025*
-
 Debugging is not just about fixing errors—it's an art and a science that transforms challenges into opportunities for growth. In this post, I’ll share my personal journey of mastering debugging, detailing the techniques, tools, and mindset that have helped me solve even the most stubborn issues in my code.
 
 ---

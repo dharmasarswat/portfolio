@@ -4,10 +4,6 @@ date: "2025-02-22"
 excerpt: "Learn how to set up a scalable and maintainable micro frontend project using a monorepo architecture with React, Webpack Module Federation, and other industry-best tools."
 ---
 
-# Setting Up a Monorepo Micro Frontend Project with React: Best Practices and Tools
-
-*Posted on February 22, 2025*
-
 As applications grow in complexity, **Micro Frontends** have emerged as a powerful solution to scale large front-end applications by breaking them into smaller, independently deployable modules. Pairing Micro Frontends with a **Monorepo** architecture allows for seamless code sharing and improved maintainability.
 
 In this guide, we'll walk through setting up a **Monorepo-based Micro Frontend architecture** using **React, Webpack Module Federation, TypeScript, and Yarn Workspaces**, incorporating best practices for scalability, performance, and maintainability.

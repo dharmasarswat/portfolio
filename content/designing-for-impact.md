@@ -4,10 +4,6 @@ date: "2025-02-15"
 excerpt: "Discover how art and code blend to create impactful design experiences, from user-centered strategies to responsive layouts and the balance between aesthetics and functionality."
 ---
 
-# Designing for Impact: Where Art Meets Code
-
-*Posted on February 15, 2025*
-
 Design is more than just visual appeal—it's about crafting experiences that resonate with users on an emotional and functional level. In today’s digital landscape, the fusion of art and code forms the backbone of intuitive, engaging, and impactful design. In this post, we'll explore the principles and practices that empower designers and developers to create digital experiences that are both beautiful and highly functional.
 
 ---
