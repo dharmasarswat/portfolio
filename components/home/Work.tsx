@@ -55,6 +55,15 @@ const projects = [
     link: 'http://dharmasarswat.github.io/animalFeed',
   },
   {
+    image: '/petzz-logo.png',
+    name: 'Petzz Store',
+    duration: 'May 2020 - Oct 2021',
+    description:
+      'An online marketplace for pets and pet-related products, connecting pet owners with trusted sellers for products, services, and adoption.',
+    tags: ['Next.js', 'Next Auth', 'Tailwind', 'Git', 'Javascript'],
+    link: 'https://petzz.in/',
+  },
+  {
     image: '/covid19-logo.webp',
     name: 'Covid 19 India',
     duration: 'May 2020 - July 2021',
