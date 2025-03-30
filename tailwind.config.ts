@@ -8,7 +8,6 @@ const config = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
   ],
-  prefix: '',
   theme: {
     container: {
       center: true,
@@ -74,7 +73,10 @@ const config = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],
+  plugins: [require('tailwindcss-animate')],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
 } satisfies Config;
 
 export default config;
